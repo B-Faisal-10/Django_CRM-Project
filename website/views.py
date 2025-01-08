@@ -74,7 +74,7 @@ def add_record(request):
                 return redirect('home')
         return render(request, 'add_record.html', {'form':form})
     else:
-        messages.success(request, "You Must Be Logged In....")
+        messages.success(request, "You Must Be Logged In To do That....")
         return redirect('home')
 
 def update_record(request, pk):
@@ -87,7 +87,7 @@ def update_record(request, pk):
             return redirect('home')
         return render(request, 'update_record.html', {'form':form})
     else:
-        messages.success(request, "You Must Be Logged In....")
+        messages.success(request, "You Must Be Logged In In To do That....")
         return redirect('home')
     
 
